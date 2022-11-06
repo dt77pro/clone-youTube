@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Link Css Customer-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css"> 
+    <link rel="stylesheet" href="css/sidebar-toggle.css"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/detail-youtuber.css">
+    <link rel="stylesheet" href="css/css-channels/home.css">
+    <link rel="stylesheet" href="css/css-channels/video.css">
+    <link rel="stylesheet" href="css/css-channels/play.css">
+    <link rel="stylesheet" href="css/css-channels/public.css">
+    <link rel="stylesheet" href="css/css-channels/channel.css">
+    <link rel="stylesheet" href="css/css-channels/intro.css">
+
+    <!-- Links Css Swiper -->
+    <title>You Tube</title>
+    
+</head> 
+<body>
+            <!-- HEADER -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <i class="fa-solid fa-bars menu-icon icon-menu-bar"></i>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <div class="nav-middle">
+            <div class="search-box">
+                <input type="search" placeholder="Tìm kiếm" class="search-bar">
+                <button class="search-btn"><img class="search-btn-icon" src="images/search.png"></button>
+            </div>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="images/voice-search-icon.svg">
+            </button>
+        </div>
+        <form class="form-responsive">
+            <i title="Quay lại" class="fa-solid fa-arrow-left"></i>
+            <input class="search-responsive" type="search"  placeholder="Tìm kiếm trên YouTube">
+        </form>
+        <div class="nav-right">
+            <img class="search-btn-responsive" src="images/search.png" title="Tìm kiếm">
+            <img class="voice-search-icon" src="images/voice-search-icon.svg">
+            <img src="images/video.png" class="icon">
+            <img src="images/grid.png" class="icon">
+            <img src="images/bell.png" class="icon" >
+            <img src="images/img-user.png" class="user-img" alt="Avatar" >
+        </div>
+        
+    </nav>
+    <!-- END HEADER -->
+
+    <!-------------------------------------Small Sidebar----------- --->
+    <aside class="small-sidebar disable">
+        <div class="sidebar-menu">
+            <a href="#" class="sidebar-menu__links active">
+                <img style="font-size: 10px;" src="images/home.png" alt="">
+                <span>Trang chủ</span>
+            </a>
+            <a href="#" class="sidebar-menu__links">
+                <img src="images/explore.png" alt="">
+                <span>Khám phá</span>
+            </a>
+            <a href="#" class="sidebar-menu__links">
+                <img src="images/subscription.png" alt="">
+                <span>Shorts</span>
+            </a>
+            <a href="#" class="sidebar-menu__links">
+                <img src="images/library.png" alt="">
+                <span>Kênh đăng ký</span>
+            </a>
+            <a href="#" class="sidebar-menu__links">
+                <img src="images/library.png" alt="">
+                <span>Thư viện</span> 
+            </a>
+        </div>
+        
+    </aside>
+
+    <!-- ------------------------SideBar----------- -->
+    <aside class="sidebar">
+        <div class="shortcut-links">
+            <a href="" class="links active"><img src="images/home.png" alt=""><span>Trang chủ</span></a>
+            <a href="" class="links"><img src="images/explore.png" alt=""><span>Khám phá</span> </a>
+            <a href="" class="links"><img src="images/subscription.png" alt=""><span>Kênh đăng ký</span></a>
+            <a href="" class="links"><img src="images/library.png" alt=""><span>Thư viện</span> </a>
+            <a href="" class="links"><img src="images/history.png" alt=""><span>Video đã xem</span> </a>
+            <hr class="seperator ">
+            <a href="" class="links"><img src="images/your-video.png" alt=""><span>Video của bạn</span> </a>
+            <a href="" class="links"><img src="images/watch-later.png" alt=""><span>Xem sau</span> </a>
+            <a href="" class="links"><img src="images/liked video.png" alt=""><span>Video đã thích</span> </a>
+            <hr class="seperator ">
+        </div>
+        <div class="subscribe-channel shortcut-links">
+            <h3 class="subscribe-title">KÊNH ĐĂNG KÝ</h3>
+            <div class="subscribe-content"> 
+                <ul class="accordion">
+                
+                </ul>
+            </div>
+            <a href="#" class="links-toggle active">
+                <img class="icon-readmore" src="images/show more.png" alt="">
+                <span class="readmore">Hiển thị thêm</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- End SideBar -->
+
+    <!-- SideBar Toggle -->
+    <aside class="sidebar-toggle-home">
+        <div class="header-sidebar__toggle nav-left">
+            <i class="fa-solid fa-bars menu-icon bar-icon-home"></i>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <div class="body-sidebar__toggle shortcut-links">
+            <a href="index.html" class="links active"><img src="images/home.png" alt=""><span>Trang chủ</span></a>
+            <a href="detail-youtuber.html" class="links"><img src="images/explore.png" alt=""><span>Khám phá</span> </a>
+            <a href="detail-youtuber.html" class="links"><img src="images/subscription.png" alt=""><span>Kênh đăng ký</span></a>
+            <a href="detail-youtuber.html" class="links"><img src="images/library.png" alt=""><span>Thư viện</span> </a>
+            <a href="detail-youtuber.html" class="links"><img src="images/history.png" alt=""><span>Video đã xem</span> </a>
+            <hr class="seperator ">
+            <a href="detail-youtuber.html" class="links"><img src="images/your-video.png" alt=""><span>Video của bạn</span> </a>
+            <a href="detail-youtuber.html" class="links"><img src="images/watch-later.png" alt=""><span>Xem sau</span> </a>
+            <a href="detail-youtuber.html" class="links"><img src="images/liked video.png" alt=""><span>Video đã thích</span> </a>
+            <hr class="seperator ">
+        </div>
+        <div class="subscribe-channel shortcut-links">
+            <h3 class="subscribe-title">KÊNH ĐĂNG KÝ</h3>
+            <div class="subscribe-content-home"> 
+                <ul class="accordion accordion-video-home">
+
+                </ul>
+            </div>
+            <a href="#" id="links-toggle-home" class="links-toggle active">
+                <img class="icon-readmore icon-readmore-home" src="images/show more.png" alt="">
+                <span id="read-more-home">Hiển thị thêm</span>
+            </a>
+        </div>
+    </aside>
+    <!-- SideBar Toggle -->
+
+
+    <!-- Modal SiDebar Toggle -->
+    <div class="modal-sidebar-home">
+
+    </div>
+
+    <!-- End Modal SiDebar Toggle -->
+
+    <!-- Channel HtMl -->
+    <section class="wrapper-channel">
+        <div class="container-header-channel">
+            <div class="banner-channel">
+                <p class="title-banner">Hello world!</p>
+                <div class="channel-header-links">
+                    <img class="banner-channel-img" src="images/banners/btn-1.avif" alt="">
+                    <span>Instagram</span>
+                    <img src="images/banners/fb.avif" alt="">
+                    <img src="images/banners/twitter.avif" alt="">
+                </div>
+            </div>
+            <div class="channel-header-info">
+                <div class="avatar-channel">
+                    <img class="avatar-channeler" src="images/subcriber-channels/freecodecamp-logo.png" alt="">
+                </div>
+                <div class="inner-header-container">
+                    <div class="meta-scope-channel">
+                        <div class="ytb-channel-name">
+                            freeCodeCamp.org
+                        </div>
+                        <p class="subscriber-count">6,52 Tr người đăng ký</p>
+                    </div>
+                    <div class="button-registered-channel">
+                        <span class="registered-text">Đã đăng ký</span>
+                        <span class="notification-btn"><i class="fa-regular fa-bell"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tabs Channel -->
+    <section class="container-tabs">
+        <div class="tabs-channel">
+            <div class="prev-tabs">
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+            </div>
+            <div class="tabs-content">
+                <ul class="tabs-list">
+                    <li class="tab-channel active">Trang chủ</li>
+                    <li class="tab-channel">Video</li>
+                    <li class="tab-channel">Danh sách phát</li>
+                    <li class="tab-channel">Cộng đồng</li>
+                    <li class="tab-channel">Kênh</li>
+                    <li class="tab-channel">Giới thiệu</li>
+                    <li class="search-channel">
+                        <button class="btn-search-channel"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <form  class="input-search-channel">
+                            <input type="text" placeholder="Tìm kiếm" value="">
+                        </form>
+                    </li>
+                </ul>
+                <div class="line">
+                    
+                </div>
+            </div>
+            <div class="next-tabs">
+                <span><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
+    <!-- End Tabs Channel -->
+    
+    <main class="wrapper-body"> 
+
+        <div class="container-mains">
+            <!-- Trang chủ -->
+            <div class="list-home-main panel active">
+                <div class="home-main">
+                    <div class="main-item-header">
+                        <span class="main-item-header__title">Video tải lên</span>
+                        <div class="main-item-header__play">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Phát trực tiếp</span>
+                        </div>
+                    </div>
+                    <div class="list-main-item">
+                    
+                    </div>
+                    <div class="border-bottom-main"></div>
+                </div>
+            </div>
+            
+            <!-- End trang chủ -->
+
+            <!-- Video -->
+            <div class="list-video-main panel">
+                <div class="video-main">
+                    <div class="main-item-header">
+                        <span class="main-item-header__title video-item-header__title">Video tải lên</span>
+                        <div class="main-item-header__play">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Phát trực tiếp</span>
+                        </div>
+                    </div>
+                    <div class="list-video-item">
+                        
+                    </div>
+                    <div class="border-bottom-main"></div>
+                </div>
+            </div>
+            
+            <!-- End Video -->
+            <!-- Play -->
+            <div class="list-play-main panel">
+                <div class="play-main">
+                    <div class="main-item-header">
+                        <span class="main-item-header__title play-item-header__title">Danh sách video đã tạo</span>
+                    </div>
+                    <div class="list-play-item">
+                        
+                    </div>
+                    <div class="border-bottom-main"></div>
+                </div>
+            </div>
+            
+            <!-- End Play -->
+
+            <!-- Public -->
+            <div class="list-public-main panel">
+                <div class="public-main">
+                    <div class="main-item-header">
+                        <span class="main-item-header__title play-item-header__title">Danh sách video đã tạo Cộng đồng</span>
+                    </div>
+                    <div class="list-public-item">
+                        Cộng đồng
+                    </div>
+                    <div class="border-bottom-main"></div>
+                </div>
+            </div>
+            
+            <!-- End Public -->
+
+            <!-- Channel -->
+            <div class="list-channel-main panel">
+                <div class="channel-main">
+                    <div class="main-item-header">
+                        <span class="main-item-header__title play-item-header__title">Danh sách video đã tạo Channel</span>
+                    </div>
+                    <div class="list-channel-item">
+                        Channel
+                    </div>
+                    <div class="border-bottom-main"></div>
+                </div>
+            </div>
+            
+            <!-- End Channel -->
+
+            <!-- Intro -->
+            <div class="list-intro-main panel">
+                <div class="intro-main">
+                    <div class="main-item-header">
+                        <span class="main-item-header__title play-item-header__title">Danh sách video đã tạo gới thiệu</span>
+                    </div>
+                    <div class="list-intro-item">
+                        Giới thiệu
+                    </div>
+                    <div class="border-bottom-main"></div>
+                </div>
+            </div>
+            
+        <!-- End Intro -->
+        </div>
+        
+    </main>
+
+    
+    <!-- END MAIN -->
+        
+<script type="module"  src="./js/detal-channel.js"></script>
+</body>
+</html>   

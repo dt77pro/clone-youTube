@@ -1,0 +1,14 @@
+.list-channel-main {
+    display: none;
+}
+
+.list-channel-main.active {
+    display: block;
+}
+
+.list-channel-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 5px 5px;
+    margin-bottom: 30px;
+}

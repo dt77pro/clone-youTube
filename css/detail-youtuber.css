@@ -1,0 +1,392 @@
+
+.wrapper-body, .wrapper-channel, .container-tabs {
+    margin-left: 15%;
+}
+
+.wrapper-body.active, .wrapper-channel.active, .container-tabs.active {
+    margin-left: 3%;
+}
+
+.banner-channel {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 500px);
+    background: url("../images/banners/bg-channel.jpg") repeat content-box;
+}
+
+.title-banner {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Freehand', cursive;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.channel-header-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    background: rgb(165 219 127);
+    bottom: 5%;
+    right: 5%;
+    border-radius: 5px;
+}
+
+.channel-header-links img {
+    display: block;
+    width: 27px;
+    height: 27px;
+}
+
+.channel-header-links span {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(105 16 172);
+}
+/* End Background Header */
+
+/* Channel header info */
+.channel-header-info {
+    background-color: #f9f9f9;
+    margin: 20px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.avatar-channel img{
+    width: 80px;
+    height: auto;
+    cursor: default;
+    border-radius: 50%;
+}
+
+.inner-header-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ytb-channel-name {
+    font-size: 24px;
+}
+
+.subscriber-count {
+    color: #868080;
+}
+
+.button-registered-channel .registered-text {
+    margin-right: 15px;
+    padding: 10px 15px;
+    background-color: #ececec;
+    font-size: 14px;
+    font-weight: 500;
+    color: #868080;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.notification-btn {
+    font-size: 20px;
+    color: rgb(41, 38, 38);
+}
+
+/* End Channel header info*/
+
+/* Style Tabs Channels */
+
+.container-tabs {
+    position: relative;
+    background-color: #f9f9f9;
+    margin-top: 35px;
+    position: sticky;
+    top: 59px;
+    z-index: 2;
+    padding-left: 0;
+
+}
+
+.tabs-channel {
+    position: relative;
+    height: 55px;
+    margin: 0 110px;
+    /* margin-top: -30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tabs-content {
+    position: absolute;
+    flex: 1;
+}
+
+.tabs-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-channel:last-child {
+    display: flex;
+}
+
+.tab-channel {
+    flex-shrink: 0;
+    display: block;
+    padding: 15px 27px;
+    font-weight: 500;
+    color: #524c4cd1;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tabs-content .line{
+    position: absolute;
+    border-bottom: 3px solid #615d5d;
+    width: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s linear;
+}
+
+.search-channel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 27px;
+}
+
+.btn-search-channel {
+    background-color: #f9f9f9;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-search-channel {
+    width: 100%;
+}
+
+.input-search-channel input{
+    background-color: #f9f9f9;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+.input-search-channel input.active {
+    padding-right: 20px;
+    display: block;
+    border-bottom: 2px solid #333;
+}
+
+.prev-tabs {
+    position: absolute;
+    left: 0;
+    color: #868080;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 100;
+    padding: 20px 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.next-tabs {
+    position: absolute;
+    right: 0;
+    padding: 20px 20px 20px 40px;
+    color: #868080;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 100;
+    background-color: #f9f9f9;
+}
+
+/* End Tabs channel */
+.tab-channel:hover {
+    color: rgb(13, 14, 14);
+}
+
+.tab-channel.active {
+    color: rgb(13, 14, 14);
+}
+
+main {
+    min-height: 3500px;
+    background-color: #f1f1f1;
+}
+
+.container-mains {
+    background-color: #f1f1f1;
+    margin-left: 1.4%;
+    padding: 30px 94px;
+    height: 100vh;
+}
+
+.container-mains.active {
+    margin-left: -14%;
+}
+
+@media (max-width: 1350px)  {
+    .wrapper-body, .wrapper-channel, .container-tabs {
+        margin-left: 0;
+    }
+   
+    .channel-header-info {
+        font-size: 90%;
+        margin-right: 50px;
+
+    }
+
+    .tabs-channel {
+        margin-right: 50px;
+    }
+
+    .container-mains {
+        margin-right: -50px;
+    } 
+
+}
+
+@media (max-width: 1200px) {
+
+    .channel-header-info {
+        font-size: 90%;
+        margin-right: 50px;
+
+    }
+
+    .tabs-channel {
+        margin-right: 50px;
+    }
+
+    .container-mains {
+        margin-right: -50px;
+    } 
+
+}
+
+@media (max-width: 992px) {
+
+    .wrapper-body, .wrapper-channel, .container-tabs {
+        margin-left: -3%;
+    }
+    
+    .header-sidebar__toggle {
+        margin-left: 30px;
+    }
+    
+    .channel-header-info {
+        font-size: 90%;
+        margin-right: 50px;
+
+    }
+
+    .tabs-channel {
+        margin-right: 50px;
+    }
+
+    .container-mains {
+        margin-right: -50px;
+    } 
+
+    
+}
+
+@media (max-width: 768px) {
+
+    .small-sidebar-channel {
+        display: none;
+    }
+
+    .sidebar-channel {
+        display: none;
+    }
+    
+    .channel-header-info {
+        margin-left: 30px;
+        font-size: 90%;
+    }
+
+    .avatar-channel {
+        display: none;
+    }
+
+    .tabs-channel {
+        margin-left: 30px;
+        font-size: 90%;
+    }
+
+    .container-mains {
+        margin-left: -60px;
+    } 
+
+}
+
+@media (max-width: 541px) {
+    body {
+        width: 82%;
+    }
+
+    .container-tabs {
+        width: 112%;
+    }
+
+    .banner-channel {
+        width: 125%;
+        margin: 0 auto;
+    }
+    
+    .title-banner {
+        font-size: 150%;
+    }
+
+    .channel-header-info {
+        width: 110%;
+        max-width: 350px;
+    }
+
+    .notification-btn {
+        display: none;
+    }
+
+    .tabs-channel {
+        width: 100%;
+    }
+
+    .wrapper-body {
+        width: 112%;
+    }
+
+    .main-item-header {
+        width: 120%;
+    }
+
+    .list-main-item {
+        width: 120%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
